@@ -7,12 +7,12 @@ export default class extends Component {
   render() {
     return (
       <Slide>
-        <Title desc="要解决什么问题">Why we need tests</Title>
+        <Title desc="痛点">Pain points</Title>
         <List
           items={[
-            "Validate implementation (验证实现)",
-            "Ensure quality of changes (保证变更质量)",
-            "Maintainable in future (好的用例即文档)"
+            "Effort (writing, excuting) (编写成本投入)",
+            "Effect (dependencies, compile process) (代码间影响)",
+            "Frequent changes (频繁变更)"
           ]}
         />
       </Slide>

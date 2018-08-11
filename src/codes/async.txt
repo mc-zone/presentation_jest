@@ -1,0 +1,22 @@
+test("with Promise", () => {
+  return getStuff().then(stuff => {
+    expect(stuff).toBe("something");
+  });
+});
+
+test("with async/await", async () => {
+  const stuff = await getStuff();
+  expect(stuff).toBe("something");
+});
+
+test("timer mocks", () => {
+  jest.useFakeTimers();
+
+  const mutateData = { count:0 };
+  increaseCountAfterTime(mutateData, 1000);
+  expect(mutateData.count).toBe(0);
+
+  jest.runAllTimers();
+  expect(mutateData.count).toBe(1);
+});
+

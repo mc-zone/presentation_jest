@@ -1,0 +1,20 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "jest": {
+    "rootDir": ["/myapp"],
+    "moduleDirectories": [
+      "node_modules",
+      "bower_components"
+    ], 
+    "modulePaths": ["<rootDir>/src"],
+
+    "moduleFileExtensions": ["js", "jsx"],
+
+    "moduleNameMapper": {
+      "^common$": "<rootDir>/src/common.js",
+      "^config$": "<rootDir>/src/config.js",
+    }
+  }
+}

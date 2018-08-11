@@ -1,0 +1,15 @@
+import axios from 'axios';
+import getUserInfo from './getUserInfo';
+jest.mock('axios');
+
+test('should get avatar URL by id', () => {
+  axios.get.mockResolvedValue({
+    data:{ userId:1234 }
+  });
+
+  return getUserInfo()
+    .then(users => 
+      expect(users.avatar)
+        .toEqual(`//avatar.com/user/1234`)
+    );
+});

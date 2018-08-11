@@ -7,12 +7,13 @@ export default class extends Component {
   render() {
     return (
       <Slide>
-        <Title desc="要解决什么问题">Why we need tests</Title>
+        <Title desc="Main challenges:">Better Tooling - Webpack</Title>
         <List
           items={[
-            "Validate implementation (验证实现)",
-            "Ensure quality of changes (保证变更质量)",
-            "Maintainable in future (好的用例即文档)"
+            "Non-JS-files (CSS, fonts, images...)",
+            "Path handling (root, dirs, ext, alias...)",
+            "Syntax (ESM, dynamic import)",
+            "Special transform (Define/ProvidePlugin...)"
           ]}
         />
       </Slide>

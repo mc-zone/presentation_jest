@@ -5975,8 +5975,8 @@ spectacle-theme-nova@^1.4.1:
     prismjs "^1.5.1"
 
 spectacle@^4.4.0:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/spectacle/-/spectacle-4.4.0.tgz#2f067e1966eb3e8c2f3a70c820bbe2dcfd6cce3e"
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/spectacle/-/spectacle-4.4.1.tgz#dad39f91f46c46d6ecf02a948c9b960f4aac6b96"
   dependencies:
     deep-object-diff "^1.0.4"
     emotion "^8.0.8"

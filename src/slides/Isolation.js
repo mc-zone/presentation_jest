@@ -7,13 +7,9 @@ export default class extends Component {
   render() {
     return (
       <Slide>
-        <Title desc="要解决什么问题">Why we need tests</Title>
+        <Title>Isolation</Title>
         <List
-          items={[
-            "Validate implementation (验证实现)",
-            "Ensure quality of changes (保证变更质量)",
-            "Maintainable in future (好的用例即文档)"
-          ]}
+          items={["Sandboxed (separate test environment)", "Mock functions"]}
         />
       </Slide>
     );

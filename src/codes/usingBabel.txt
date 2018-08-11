@@ -1,0 +1,7 @@
+import { foo } from "../bar";
+
+test("using babel", async () => {
+  const result = await foo();
+  expect(result).toBe("bar");
+});
+

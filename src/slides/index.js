@@ -17,14 +17,25 @@ import {
   Slide,
   Text
 } from "spectacle";
-import createTheme from "spectacle-theme-nova";
+import createTheme from "spectacle/lib/themes/default/index";
+import "prismjs/components/prism-bash";
+import "prismjs/components/prism-json";
+import "prismjs/themes/prism-tomorrow.css";
 
 const getSlide = name => {
   const Item = require(`./${name}`).default;
   return <Item />;
 };
 
-const theme = createTheme();
+const theme = createTheme(
+  {
+    primary: "#2d2d2d",
+    secondary: "#f8c555",
+    tertiary: "#f08d49",
+    quarternary: "#ccc"
+  },
+  {}
+);
 
 export default class extends Component {
   render() {
@@ -32,14 +43,22 @@ export default class extends Component {
       <Deck
         transition={["slide"]}
         transitionDuration={500}
-        theme={theme}
         controls
+        theme={theme}
         progress="pacman"
       >
         {getSlide("Start")}
         {getSlide("Background")}
-        {getSlide("Problems")}
-        {getSlide("WhatJestBring")}
+        {getSlide("Pain")}
+        {getSlide("WhatJestTake")}
+        {getSlide("Efficiency.ZeroConf")}
+        {getSlide("Efficiency.Async")}
+        {getSlide("Efficiency.Faster")}
+        {getSlide("Isolation")}
+        {getSlide("Isolation.Mock")}
+        {getSlide("BetterTooling.Babel")}
+        {getSlide("BetterTooling.Webpack.issue")}
+        {getSlide("BetterTooling.Webpack.jestConfig")}
       </Deck>
     );
   }

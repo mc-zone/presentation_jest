@@ -1,0 +1,13 @@
+.spectacle-slide {
+  background-color:transparent !important;
+}
+.code-normal {
+  background-color: rgba(0,0,0, 0.15) !important;
+  margin-bottom:20px !important;
+  border-radius: 10px;
+  padding:0 10px;
+}
+
+.code-normal > pre {
+  background-color:transparent !important;
+}
