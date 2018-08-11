@@ -9,7 +9,7 @@
     "start": "webpack-dev-server",
     "build": "webpack --mode=production",
     "prettier": "prettier --write ./webpack.config.js ./src/**/*.js",
-    "deploy": "yarn build && ./deploy.sh && rm -rf dist"
+    "deploy": "rm -rf ./dist && yarn build && ./deploy.sh"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.56",
