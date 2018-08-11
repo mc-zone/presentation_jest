@@ -11,5 +11,5 @@ cd ./dist
 git init
 git add -A
 git commit -m 'deploy'
-git push -f origin master:gh-pages
+git push -f https://github.com/mc-zone/presentation_jest.git master:gh-pages
 cd -

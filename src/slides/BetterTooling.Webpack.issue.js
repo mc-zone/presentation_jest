@@ -12,8 +12,8 @@ export default class extends Component {
           items={[
             "Non-JS-files (CSS, fonts, images...)",
             "Path handling (root, dirs, ext, alias...)",
+            "Special transform (Define/ProvidePlugin...)",
             "Syntax (ESM, dynamic import)",
-            "Special transform (Define/ProvidePlugin...)"
           ]}
         />
       </Slide>

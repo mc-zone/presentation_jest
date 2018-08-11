@@ -15,6 +15,27 @@
     "moduleNameMapper": {
       "^common$": "<rootDir>/src/common.js",
       "^config$": "<rootDir>/src/config.js",
+
+      "\\.(jpg|jpeg|png|gif)$":
+        "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$":
+        "<rootDir>/__mocks__/styleMock.js",
+
+      "\\.(css|less)$":
+        "identity-obj-proxy"
+    },
+
+    "globals": {
+      "__DEV__": true,
+      "__TEST__": true,
+    },
+
+    "setupFiles": ["<rootDir>/global.js"],
+
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      "^.+\\.foo$": "custom-transformer",
     }
+
   }
 }

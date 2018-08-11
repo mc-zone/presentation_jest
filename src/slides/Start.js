@@ -8,7 +8,7 @@ export default class extends Component {
         <Heading fit>Test Modern Web Applications</Heading>
         <Heading>with</Heading>
         <Heading fit>Jest</Heading>
-        <Text>@mc-zone</Text>
+        <Text textColor="quarternary">@mc-zone</Text>
       </Slide>
     );
   }

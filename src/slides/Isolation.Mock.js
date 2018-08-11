@@ -13,7 +13,8 @@ export default class extends Component {
           code={require("raw-loader!../codes/mockExample.txt")}
           ranges={[
             { loc: [0, 3] },
-            { loc: [5, 8] },
+            { loc: [2, 3], note: "Mock the module" },
+            { loc: [5, 8], note: "Set some mock data" },
             { loc: [9, 14], note: "No need to care about axios/network fetch" }
           ]}
         >

@@ -59,6 +59,7 @@ export default class extends Component {
         {getSlide("BetterTooling.Babel")}
         {getSlide("BetterTooling.Webpack.issue")}
         {getSlide("BetterTooling.Webpack.jestConfig")}
+        {getSlide("React")}
       </Deck>
     );
   }
