@@ -1,3 +1,4 @@
+import createTheme from "spectacle/lib/themes/default/index";
 import React, { Component } from "react";
 import {
   Appear,
@@ -17,10 +18,6 @@ import {
   Slide,
   Text
 } from "spectacle";
-import createTheme from "spectacle/lib/themes/default/index";
-import "prismjs/components/prism-bash";
-import "prismjs/components/prism-json";
-import "prismjs/themes/prism-tomorrow.css";
 
 const getSlide = name => {
   const Item = require(`./${name}`).default;
@@ -59,7 +56,16 @@ export default class extends Component {
         {getSlide("BetterTooling.Babel")}
         {getSlide("BetterTooling.Webpack.issue")}
         {getSlide("BetterTooling.Webpack.jestConfig")}
+        {getSlide("BetterTooling.Puppeteer")}
         {getSlide("React")}
+        {getSlide("React.how")}
+        {getSlide("React.snapshot")}
+        {getSlide("React.snapshot.fail")}
+        {getSlide("Tips.location")}
+        {getSlide("Tips.localStorage")}
+        {getSlide("Tips.avoid")}
+        {getSlide("Suggestion")}
+        {getSlide("End")}
       </Deck>
     );
   }

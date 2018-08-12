@@ -11,3 +11,20 @@
 .code-normal > pre {
   background-color:transparent !important;
 }
+
+.spectacle-content .heading,
+.spectacle-content .heading > h1,
+.code-slide-children {
+  z-index:9999 !important;
+}
+
+.spectacle-content .spectacle-content > div {
+  z-index:9999 !important;
+  white-space: pre !important;
+}
+.spectacle-content .spectacle-content > img {
+  top:40% !important;
+  -webkit-transform: translate(-50%,-40%);
+  -ms-transform: translate(-50%,-40%);
+  transform: translate(-50%,-40%);
+}

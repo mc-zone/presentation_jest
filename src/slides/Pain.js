@@ -7,7 +7,9 @@ export default class extends Component {
   render() {
     return (
       <Slide>
-        <Title desc="有哪些痛点">Pain points</Title>
+        <Title desc="有哪些痛点" fit={false}>
+          Pain points
+        </Title>
         <List
           items={[
             "Effort: writing, excuting (编写成本投入)",

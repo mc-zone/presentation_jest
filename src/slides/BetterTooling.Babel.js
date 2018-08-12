@@ -8,9 +8,12 @@ export default class extends Component {
     return (
       <Slide>
         <Title desc="Already supported internally">
-          Better Tooling - Babel
+          Tooling Supports - Babel
         </Title>
-        <CodePane lang="json" source={require("raw-loader!../codes/babelrc.txt")} />
+        <CodePane
+          lang="json"
+          source={require("raw-loader!../codes/babelrc.txt")}
+        />
         <CodePane
           lang="js"
           source={require("raw-loader!../codes/usingBabel.txt")}

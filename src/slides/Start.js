@@ -1,14 +1,15 @@
 import React, { Component } from "react";
-import { Slide, Heading, Text } from "spectacle";
+import { Slide, Heading } from "spectacle";
+import Text from "../components/Text";
 
 export default class extends Component {
   render() {
     return (
       <Slide>
-        <Heading fit>Test Modern Web Applications</Heading>
-        <Heading>with</Heading>
-        <Heading fit>Jest</Heading>
-        <Text textColor="quarternary">@mc-zone</Text>
+        <Heading fit>Test Web Applications</Heading>
+        <Text>with</Text>
+        <Heading textSize="20rem">Jest</Heading>
+        <Text>@mc-zone</Text>
       </Slide>
     );
   }

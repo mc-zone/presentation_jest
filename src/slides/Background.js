@@ -12,7 +12,7 @@ export default class extends Component {
           items={[
             "Validate implementation (验证实现)",
             "Ensure quality of changes (保证变更质量)",
-            "Maintainable in future (好的用例即文档)"
+            "Maintainable in future (好的用例能当文档)"
           ]}
         />
       </Slide>

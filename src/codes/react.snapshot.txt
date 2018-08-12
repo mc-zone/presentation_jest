@@ -1,0 +1,19 @@
+test("should trigger when hoverd", () => {
+  const menu = renderer.create(
+    <DropdownMenu>
+      <div>sub items</div>
+      <div>sub items</div>
+    </DropdownMenu>
+  );
+  let tree = menu.toJSON();
+  expect(tree).toMatchSnapshot();
+
+  tree.props.onMouseEnter();
+  tree = menu.toJSON();
+  expect(tree).toMatchSnapshot();
+
+  tree.props.onMouseLeave();
+  tree = menu.toJSON();
+  expect(tree).toMatchSnapshot();
+});
+

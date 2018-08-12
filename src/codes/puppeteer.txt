@@ -1,0 +1,9 @@
+test("should has 8 hot items", async () => {
+  const page = await browser.newPage()
+  await page.goto('https://kg.qq.com');
+  expect(await page.evaluate(() => 
+    $('#hot_works li').length
+  )).toBe(8);
+  await page.close();
+});
+

@@ -1,0 +1,9 @@
+test("should redirect test", () => {
+  // It's easier than mock location.href
+  window.location.assign = jest.fn();
+  
+  // trigger location.assign
+
+  expect(window.location.assign).toBeCalledWith('https://redirect.com');
+  window.location.assign.mockRestore();
+});

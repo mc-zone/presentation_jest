@@ -1,0 +1,10 @@
+test("cssText", () => {
+  const $ = require("zeptojs");
+  const $el = $(`<div style="color:red" />`);
+  expect($el.css("color")).toBe("red");
+  $el.css("color", "black");
+  expect($el.css("color")).toBe("black");
+  
+  //...
+
+});

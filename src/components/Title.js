@@ -1,15 +1,14 @@
 import React, { Component } from "react";
-import { Heading, Text } from "spectacle";
+import { Heading } from "spectacle";
+import Text from "./Text";
 
-export default ({ children, desc }) => {
+export default ({ children, desc, fit = true }) => {
   return (
     <>
-      <Heading fit>{children}</Heading>
-      {desc ? (
-        <Text textColor="quarternary" style={{ marginTop: 10 }}>
-          {desc}
-        </Text>
-      ) : null}
+      <Heading className="heading" fit={fit}>
+        {children}
+      </Heading>
+      {desc ? <Text>{desc}</Text> : null}
     </>
   );
 };

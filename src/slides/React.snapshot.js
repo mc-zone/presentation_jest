@@ -10,18 +10,16 @@ export default class extends Component {
         <CodeSlide
           {...this.props}
           lang="js"
-          code={require("raw-loader!../codes/mockExample.txt")}
+          code={require("raw-loader!../codes/react.snapshot.txt")}
           fullAfterIndex={1}
           ranges={[
-            { loc: [0, 3] },
-            { loc: [2, 3], note: "Mock the module" },
-            { loc: [5, 8], note: "Set some mock data" },
-            { loc: [9, 14], note: "No need to care about axios/network fetch" }
+            { loc: [0, 10] },
+            { loc: [7, 9], note: "Just create snapshots to compare next time" },
+            { loc: [10, 13], note: "Include some interactive and re-render" },
+            { loc: [14, 17], note: "Any number of screenshots" }
           ]}
         >
-          <Title desc="Isolated from complex dependencies">
-            Mock Functions
-          </Title>
+          <Title>Snapshot Testing</Title>
         </CodeSlide>
       </Slide>
     );

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Layout } from "spectacle";
+import { Layout, Fill } from "spectacle";
 import CodeSlide from "spectacle-code-slide";
 
 export default class _CodeSlide extends Component {
@@ -47,7 +47,6 @@ export default class _CodeSlide extends Component {
     const { children, fullAfterIndex, ...props } = this.props;
     return (
       <>
-        {!this.state.active && children ? children : null}
         <Layout style={{ height: this.height }}>
           <CodeSlide
             {...props}
@@ -56,6 +55,9 @@ export default class _CodeSlide extends Component {
             }}
             transition={[]}
           />
+          {!this.state.active && children ? (
+            <Fill className="code-slide-children">{children}</Fill>
+          ) : null}
         </Layout>
       </>
     );

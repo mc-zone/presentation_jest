@@ -1,0 +1,21 @@
+import React from "react";
+
+export default class DropdownMenu extends React.Component {
+  render(){
+    return (
+      <div
+        onMouseEnter={() => this.setState({show:true})}
+        onMouseLeave={() => this.setState({show:false})}
+      >
+        <span>{`Menu ${this.state.show ? "-" : "+"}`}</span>
+        {this.state.show ? (
+        <ul>
+-          {this.props.children}
+        </ul>
+        ) : null}
+      </div>
+    );
+  }
+
+}
+

@@ -10,30 +10,32 @@ export default class extends Component {
         <CodeSlide
           {...this.props}
           lang="json"
+          fullAfterIndex={100}
           code={require("raw-loader!../codes/jest.config.webpack.txt")}
           ranges={[
             { loc: [0, 10], note: "Add configs in package.json" },
             { loc: [5, 11], note: "context, resolve.modules" },
             { loc: [12, 13], note: "resolve.extensions" },
             { loc: [13, 17], note: "resolve.alias" },
-            { loc: [18, 22], note: "mock static files\n(in most cases they are no need to test)" },
-            { loc: [23, 25], note: "Or using identity-obj-proxy to mock CSS Module (styles.color === \"color\")" },
+            {
+              loc: [18, 22],
+              note:
+                "mock static files\n(in most cases they are no need to test)"
+            },
+            {
+              loc: [23, 25],
+              note:
+                'Or using identity-obj-proxy to mock CSS Module\n(styles.color === "color")'
+            },
             { loc: [27, 31], note: "Global Constants (DefinePlugin)" },
             { loc: [32, 33], note: "Set global vars/libs (ProvidePlugin)" },
-            { loc: [34, 38], note: "Add some else transformers if not enough" },
+            { loc: [34, 38], note: "Add some else transformers if not enough" }
           ]}
         >
           <Title desc="Resolve by appropriate configurations">
-            Better Tooling - Webpack
+            Tooling Supports - Webpack
           </Title>
         </CodeSlide>
-
-        {/*
-        <Text fit>
-          (Or you can provide a jest.config.js file through{" "}
-          <Code style={{ fontSize: 4 }}>--config</Code>)
-        </Text>
-        */}
       </Slide>
     );
   }

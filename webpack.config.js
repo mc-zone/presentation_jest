@@ -4,7 +4,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   output: {
     filename: "main-[chunkhash].js",
-    pathinfo: true,
   },
   module: {
     rules: [

@@ -11,20 +11,8 @@ test('Go to login page when clicked', () => {
   expect(tree.type).toBe("button");
   expect(tree.children).toEqual(["Login"]);
 
+  expect(location.pathname).toBe("/");
   tree.props.onClick();
-
-  expect(tree).toMatchSnapshot();
-
-  // manually trigger the callback
-  tree.props.onMouseEnter();
-  // re-rendering
-  tree = component.toJSON();
-  expect(tree).toMatchSnapshot();
-
-  // manually trigger the callback
-  tree.props.onMouseLeave();
-  // re-rendering
-  tree = component.toJSON();
-  expect(tree).toMatchSnapshot();
+  expect(location.pathname).toBe("/login");
 });
 

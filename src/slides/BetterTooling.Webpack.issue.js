@@ -7,13 +7,13 @@ export default class extends Component {
   render() {
     return (
       <Slide>
-        <Title desc="Main challenges:">Better Tooling - Webpack</Title>
+        <Title desc="Main challenges:">Tooling Supports - Webpack</Title>
         <List
           items={[
             "Non-JS-files (CSS, fonts, images...)",
             "Path handling (root, dirs, ext, alias...)",
             "Special transform (Define/ProvidePlugin...)",
-            "Syntax (ESM, dynamic import)",
+            "Syntax (ESM, dynamic import)"
           ]}
         />
       </Slide>

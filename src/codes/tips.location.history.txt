@@ -1,0 +1,7 @@
+test("should redirect test", () => {
+  expect(window.location.pathname).toBe('/');
+
+  // trigger history.pushState / replaceState
+
+  expect(window.location.pathname).toBe('/newPage');
+});
