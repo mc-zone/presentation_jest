@@ -28,3 +28,12 @@
   -ms-transform: translate(-50%,-40%);
   transform: translate(-50%,-40%);
 }
+.webpack-message {
+  position:absolute;
+  bottom:-3rem;
+  right:-10rem;
+  width:90%;
+  -webkit-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}

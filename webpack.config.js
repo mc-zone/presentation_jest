@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   output: {
-    filename: "main-[chunkhash].js",
+    filename: "main-[chunkhash].js"
   },
   module: {
     rules: [
@@ -18,9 +18,15 @@ module.exports = {
             loader: "babel-loader",
             options: {
               presets: [
-                ["@babel/preset-env", { modules: false }],
+                [
+                  "@babel/preset-env",
+                  {
+                    modules: false
+                  }
+                ],
                 "@babel/preset-react"
-              ]
+              ],
+              plugins: ["@babel/plugin-proposal-class-properties"]
             }
           }
         ]
